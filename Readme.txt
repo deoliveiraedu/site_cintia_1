@@ -4,7 +4,7 @@ Developed by deoliveiraedu
 
 
 
-Informações do Tema utilizado:
+Theme info:
 
 Theme Name: Folio
 Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
