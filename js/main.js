@@ -101,6 +101,22 @@ $(document).ready(function() {
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });
 
+
+      // ========================================================================= //
+      //  Owl Carousel Services Porfolio
+      // ========================================================================= //
+
+
+    $('.portfolio-carousel').owlCarousel({
+        autoplay: true,
+        loop: true,
+        margin: 0,
+        dots: false,
+        nav: false,
+        responsiveClass: true,
+        responsive: false,
+      });
+
   // ========================================================================= //
   //  magnificPopup
   // ========================================================================= //
@@ -155,29 +171,3 @@ $(window).load(function(){
   });
 
 })
-
-
-// ========================================================================= //
-//  flickity services
-// ========================================================================= //
-
-var $carousel = $('.carousel').flickity({
-  imagesLoaded: true,
-  percentPosition: false,
-});
-
-var $imgs = $carousel.find('.carousel-cell img');
-// get transform property
-var docStyle = document.documentElement.style;
-var transformProp = typeof docStyle.transform == 'string' ?
-  'transform' : 'WebkitTransform';
-// get Flickity instance
-var flkty = $carousel.data('flickity');
-
-$carousel.on( 'scroll.flickity', function() {
-  flkty.slides.forEach( function( slide, i ) {
-    var img = $imgs[i];
-    var x = ( slide.target + flkty.x ) * -1/3;
-    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-  });
-});

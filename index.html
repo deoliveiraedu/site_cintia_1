@@ -21,7 +21,6 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/hover/hover.min.css" rel="stylesheet">
-  <link href="lib/flickity/flickity.min.css" media="screen">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -32,7 +31,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
   <!-- =======================================================
     Theme Name: Folio
@@ -176,7 +175,8 @@
   </div>
 
 
-  <div class="carousel">
+  <div class="portfolio-carousel owl-theme"
+  data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
     <div class="carousel-cell">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
     </div>
@@ -319,8 +319,6 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
-  <!-- flickity Javascript File -->
-  <script src="lib/flickity/flickity.pkgd.min.js"></script>
 
 </body>
 
