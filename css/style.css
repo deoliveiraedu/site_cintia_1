@@ -1,9 +1,9 @@
 
 /*
-  Theme Name: Folio
-  Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
+Theme Name: Folio
+Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+Author: BootstrapMade.com
+Author URL: https://bootstrapmade.com
 */
 
 /*  General Styling
@@ -40,6 +40,16 @@ h4 {
   color: #292929;
   font-size: 14px;
   font-weight: 600;
+}
+
+h5 {
+  color: #898989;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 a {
@@ -361,7 +371,6 @@ nav ul li a {
   line-height: 44px;
 }
 
-
 .services-carousel  .owl-stage-outer {
   overflow: hidden;
   text-align: center;
@@ -392,16 +401,26 @@ nav ul li a {
   display: none;
 }
 
-
-
 /*-----------------------------------------------------------------------------------*/
 /*  Portfolio Carousel
 /*-----------------------------------------------------------------------------------*/
 
-* { box-sizing: border-box; }
+#portfolio {
+  height: 500px;
+  background-color: #FFF;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container {
+  display: table;
+  height: inherit;
+}
+.text
 
 .portfolio-carousel {
-  height: 400px;
+  height: 500px;
 }
 
 .carousel {
@@ -409,21 +428,44 @@ nav ul li a {
 }
 
 .carousel-cell {
-  margin-right: 20px;
+  margin-right: 0px;
   overflow: hidden;
-  height: 400px;
+  height: 500px;
 }
 
 .carousel-cell img {
   display: block;
-  height: 400px;
+  height: 500px;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel-cell img {
-    height: 400px;
-  }
+
+.carousel-cell  span {
+  margin: 0px 0;
+  position: relative;
+  font-size: 13px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  background: rgba(204, 204, 204, 0.5)
 }
+
+.carousel-cell .info {
+  position: fixed;
+  color: #292929;
+  right: 0px;
+  left: 0px;
+  top: 80%;
+  bottom: 0px;
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  background: rgba(25, 25, 25, .1);
+}
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  Journal

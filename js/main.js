@@ -107,15 +107,30 @@ $(document).ready(function() {
       // ========================================================================= //
 
 
-    $('.portfolio-carousel').owlCarousel({
-        autoplay: true,
-        loop: true,
-        margin: 0,
-        dots: false,
-        nav: false,
-        responsiveClass: true,
-        responsive: false,
-      });
+  $('.portfolio-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 10,
+      dots: false,
+      responsiveClass: true,
+      autoWidth:true,
+      nav:false,
+      responsive:{
+        0:{
+            items:1,
+            width: 300,
+
+        },
+        600:{
+            items:2,
+            width: 500,
+        },
+        1000:{
+            items:2,
+            width: 700,
+        }
+      }
+  });
 
   // ========================================================================= //
   //  magnificPopup
